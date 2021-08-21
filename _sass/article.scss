@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
+
+$red: #F95D62;
+$blue: #56CCF2;
+$green: #63FFAB;
+$yellow: #FCDDAD;
+$white: #FFFFFF;
+$navy: #0D2A38;
+
+.article {
+grid-area: content;
+}
+
+.article-blank-content {
+	font-family: 'Strait';
+	padding: 2em 2em 2em 2em;
+	font-size: 1.5em;
+}
+
+.article-filled-content { 
+	font-family: 'Strait';
+	background: #F95D62;
+	border-radius: 24px;
+	padding: 2em 2em 2em 2em;
+	font-size: 1.5em;
+}
+
+.article-grid {
+	display: grid;
+	grid-template-areas:
+	'leftgutter content rightgutter'
+	'leftgutter content rightgutter'
+	'leftgutter content rightgutter';
+	grid-template-columns: auto 70em auto;
+	grid-gap:2em;
+}
+
+.article-blank-content > p {
+text-align: left;
+color: black;
+}
+
+.article-filled-content > p {
+text-align: left;
+color: $white;
+}
+
+.blog-blank-content { 
+	grid-area: content;
+	margin-bottom: 5em;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-left:5vw;
+	padding-right: 5vw;
+}
+
+.blog-filled-content { 
+	grid-area: content;
+	border-radius: 24px;
+	background: $blue;
+	margin-bottom: 5em;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-left:5vw;
+	padding-right: 5vw;
+}

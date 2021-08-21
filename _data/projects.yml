@@ -1,0 +1,25 @@
+- name: Coruncopia
+  banner-image: banner-coruncopia.png
+  tagline: Procedural Naturepunk Action-Adventure RPG
+  thumb1: coruncopia_screen.png
+  thumb2: coruncopia_screen.png
+  thumb3: coruncopia_screen.png
+  content-tagline: "Bear witness to the end of a long journey."
+  description: "<p>You are Nil, a powerful old druid charged with putting a broken world back together. Right at the end of your quest, cosmic creatures banished from their own dimension end up becoming trapped in yours, and now threaten all life on Coruncopia in order to return home.</p><p>Collect and create powerful spells, navigate through 6 procedurally hand-crafted dungeons in any order, and repel the enemy invaders before it's too late!</p>"
+  infobox: "
+            <ul>
+                <li>Platform: PC</li>
+                <li>Release Date: Q4 2022</li>
+                <li>Coruncopia Blog Posts</li>
+                <li>Tags: Procedural, Roguelike, Action RPG, Story-Driven, Fantasy, Science Fiction</li>
+            </ul>
+            "
+- name: Taptap Studio
+  banner-image: banner-taptap.png
+  tagline: Rhythm Game Creator Utilizing Machine Learning
+  thumb1: coruncopia_screen.png
+  thumb2: coruncopia_screen.png
+  thumb3: coruncopia_screen.png
+  content-tagline: "It's a rhythm game game!"
+  description: "Lorem ipsum bla bla bla"
+  infobox: "Hee ho"

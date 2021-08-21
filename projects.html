@@ -1,0 +1,70 @@
+---
+layout: default
+title: Projects
+colorscheme: "#56CCF2"
+bg-image: parasol_background_blue.png
+---
+<div class="article-grid">
+	<div class="staff-item-left"></div>
+	
+	<div class="article-content">
+		<h1 class="page-title" style="background:  {{page.colorscheme}}">
+		Projects
+		</h1>
+	</div>
+	<div class="staff-item-right"></div>
+</div>
+
+<div class="article-grid">
+	<div class="staff-item-left"></div>
+		<div class="article-content">
+		{% for item in site.data.projects %}
+			<button type="button" class="project-collapsed">
+				<img src="/assets/images/projects/{{item.banner-image}}"/>
+				<h1>{{ item.name }}</h1>
+				<h2>{{ item.tagline }}</h2>
+			</button>
+		<div class="project-expanded">
+			<div class="rollout-grid">
+				<div class="desc">
+					<h1>{{ item.content-tagline }}</h1>
+					<p>{{ item.description }}</p>
+				</div>
+				<div class="info">
+					<p>{{ item.infobox }}</p>
+				</div>
+				<div class="thumbnail-grid">
+				<a target="_blank" class="thum1" href="/assets/images/projects/{{ item.thumb1 }}">
+					<img class="thum1" src="/assets/images/projects/{{ item.thumb1 }}" />
+				</a>
+				<a target="_blank" class="thum2" href="/assets/images/projects/{{ item.thumb2 }}">
+					<img class="thum2" src="/assets/images/projects/{{ item.thumb2 }}" />
+				</a>
+				<a target="_blank" class="thum3" href="/assets/images/projects/{{ item.thumb3 }}">
+					<img class="thum3" src="/assets/images/projects/{{ item.thumb3 }}" />
+				</a>
+				</div>
+
+			</div>
+		</div>
+		{% endfor %}
+		</div>
+	
+	<div class="staff-item-right"></div>
+</div>
+<script>
+	var coll = document.getElementsByClassName("project-collapsed");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "flex") {
+		  content.style.display = "none";
+		} else {
+		  content.style.display = "flex";
+		}
+	  });
+	}
+</script>

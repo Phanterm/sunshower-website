@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
+
+$red: #F95D62;
+$blue: #56CCF2;
+$green: #63FFAB;
+$yellow: #FCDDAD;
+$white: #FFFFFF;
+$navy: #0D2A38;
+
+	.loader {
+	  $parent: &;
+	  $tiles: 5;
+	  position: fixed;
+	  z-index: 999;
+	  top: 0;
+	  left: 0;
+	  width: 0;
+	  height: 100vh;
+	  transition: width 0s 1.4s ease;
+	  
+	  #{$parent}__icon {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		opacity: 0;
+		transition: opacity .6s ease;
+		
+		svg {
+		  transform-origin: 0 0;
+		}
+	  }
+	  
+	  #{$parent}__tile {
+		position: absolute;
+		left: 0;
+		width: 0;
+		height: 20%;
+		transition: width .6s ease;
+		background-color: black;
+		@for $i from 0 through $tiles {
+		  &:nth-child(#{$i}) {
+			top: calc(#{$i - 1} * 20%);
+			transition-delay: #{($i - 1) * 0.2s};
+		  }
+		}
+	  }
+	  
+	  &--active {
+		width: 100%;
+		transition-delay: 0s;
+		
+		#{$parent}__icon {
+		  opacity: 1;
+		  transition: opacity .5s 1.4s ease;
+		}
+		
+		#{$parent}__tile {
+		  width: 100%;
+
+		  @for $i from 0 through $tiles {
+			&:nth-child(#{$i}) {
+			  transition-delay: #{($i - 1) * 0.2s};
+			}
+		  }
+		}
+	  }
+	}
+
+.section1 {grid-area: header; }
+.section2 {grid-area: menu; }
+.section3 {grid-area: main; }
+.section4 {grid-area: footer; }
+
+.flip-card {
+	display: flex;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	perspective: 1000px;
+	border-radius: 5em;
+	align-self: center;
+	justify-self: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.flip-card-inner {
+	position: relative;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 5em;
+	height: 20em;
+	width: 18em;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+	color: white;
+	transform: rotateY(180deg);
+	height: 24em;
+	width: 14em;
+	border-radius: 5em;
+	padding: 2em 2em 2em 2em;
+}
+
+.flip-card-back > h3 {
+	font-family: 'Fredoka One';
+	font-size: 2em;
+	color: white;
+	text-align: left;
+}
+
+.flip-card-back > h4 {
+	position: absolute;
+	color: $white;
+	font-family: 'Teko';
+	text-align: left;
+	font-size: 3em;
+	font-style: italic;
+	top: 82%;
+	left: 14%;
+}
+
+.flip-card-back > h5 {
+	position: absolute;
+	color: $white;
+	font-family: 'Strait';
+	font-style: italic;
+	text-align: left;
+	font-size: 1em;
+	top: 80%;
+}
+
+.flip-card-back > p {
+
+	color: white;
+	text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left main main main main right'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+h4 {
+	color: $white;
+	font-family: 'Teko';
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+h5 {
+	color: $white;
+	font-family: 'Teko';
+	text-align: left;
+	font-size: 2em;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.page-title {
+	font-family: 'Fredoka One';
+	color: $white;
+	border-radius: 24px;
+	
+}
+
+.super-hr {
+    content: " ";
+    display: block;
+    border-top: 1px solid white;
+	border-bottom: 0px solid transparent;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	position: absolute;
+	width: 14em;
+	top: 82%;
+	left: 10%;
+}
+.current {
+  color: green;
+}
+
+.staff-grid {
+	display: grid;
+	grid-template-areas:
+	'leftgutter content content content rightgutter'
+	'leftgutter content content content rightgutter'
+	'leftgutter content content content rightgutter';
+	grid-template-columns: auto 20em 20em 20em auto;
+	grid-template-rows: 28em;
+	grid-gap:2em;
+}
+
+.staff-item-left { grid-area: leftgutter; }
+.staff-item-right { grid-area: rightgutter; }
+.staff-item-content-a { 
+	grid-area: content; 
+}
+.staff-item-content-b { 
+	grid-area: content; 
+}
+.staff-item-content-c { 
+	grid-area: content; 
+}
+.staff-item-content-d { 
+	grid-area: content; 
+}
+
+.staff-icon-grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+	'icon'
+	'name'
+	'position';
+	border-radius: 5em;
+	background: $green;
+	padding: 2em 2em 2em 2em;
+	height: 24em;
+	width: 14em;
+}
+
+.staff-icon-image { 
+	display: flex;
+	grid-area: icon;
+	justify-content: center;
+	padding-bottom: 1em;
+}
+
+.staff-icon-name { 
+	display: flex;
+	grid-area: name; 
+	height: 4em;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1em;
+}
+
+.staff-icon-position { 
+	display: flex;
+	grid-area: position; 
+	height: 2em;
+	align-items: center;
+	justify-content: center;
+}
+
+#staffimage {
+	background-color: $white;
+	border: 18px solid $white;
+	border-radius: 22em;
+	max-height: 192px;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 100%; }
+}
+
+@media (min-width: 768px) {  
+  .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+  }
+}
+
+html {
+
+}
+
+body {
+}
+
+p {
+	text-align:center;
+	font-family: 'Strait';
+}
+
+a {
+	color: #0D2A38;
+	text-decoration: none;
+}
+
+h2 > a {
+
+}
+
+h3 > a {
+color: $navy;
+font-size: 0.5em;
+font-family: 'Teko';
+}
+
+h1 {
+	text-align:center;
+	font-size: 4em;
+	font-family: 'Fredoka One';	
+	margin-bottom: 0px;
+	margin-top: 1.5em;
+}
+
+h2 {
+	text-align:center;
+	font-size: 3em;
+	color: #0D2A38; /* Dark Blue */
+	font-family: 'Fredoka One';
+}
+
+h3 {
+	text-align:center;
+	font-size: 2em;
+	color: #0D2A38; /* Dark Blue */
+	font-family: 'Fredoka One';
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+li > a {
+  text-decoration: underline;
+}
+
+
+li {
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+.wrapper-main {
+	margin: auto;
+	overflow: hidden;
+	margin-top: 40em;
+	padding-bottom: 20em;
+}
+

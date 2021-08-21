@@ -1,0 +1,20 @@
+---
+layout: blog
+title: Blog
+custom_css: blog
+type: archive
+---
+<h1 style="text-align: left">Latest Posts</h1>
+
+		<ul>
+		  {% for post in site.posts %}
+			<li class="archive">
+			  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			</li>
+			<li class="date">{{ post.date }}</li>
+			<li class="description">
+			  {{ post.excerpt }}
+			</li>
+		  {% endfor %}
+		</ul>
+
