@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
+
+$red: #F95D62;
+$blue: #5FA5D3;
+$green: #65B869;
+$yellow: #FCDDAD;
+$white: #FFFFFF;
+$black: #1D1D1D;
+$navy: #0D2A38;
+
+.section1 {grid-area: header; }
+.section2 {grid-area: menu; }
+.section3 {grid-area: main; }
+.section4 {grid-area: footer; }
+
+.article-title {
+	font-variant: small-caps;
+	font-size: 4em;
+}
+
+.author-archive {
+	text-align: left;
+	font-size: 1em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+.author-article {
+	text-align: left;
+	font-size: 1.75em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.author-article > a {
+	color: $yellow;
+
+	text-decoration: none;
+}
+
+.article-category {
+	text-transform: uppercase;
+	font-style: italic;
+	color: $white;
+	margin-top: 0;
+	margin-bottom: 0em;
+}
+
+.article-subheader {
+	font-size: 3em;
+	text-align: left;
+}
+
+.archive-link {
+	color: $white;
+	text-decoration: underline;
+	margin-top: 0.15em;
+	margin-bottom: 0.15em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 0.65em;
+}
+
+.date-article {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	color: #FFFFFF;
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 3em;
+	font-size: 1em;
+
+}
+
+.background-image {
+	position: relative;
+	height: 5em;
+	background-image: url(/assets/images/background/bluegrid.svg);
+	background-repeat: repeat-x;
+	opacity: 0.75;
+	z-index: 1;
+}
+.background {
+	background-image: linear-gradient(#39474B, #1A333C);
+	background-attachment: fixed;
+}
+
+.current {
+  color: green;
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-areas: 'leftgutter content content content content content rightgutter';
+	grid-template-columns: auto 5em 5em 5em 5em 5em auto;
+	grid-gap: 3em;
+}
+
+.footer-item {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+	justify-self: left;
+	font-family: 'Strait';
+	color: $white;
+}
+
+a {
+	color: $yellow;
+	text-decoration: none;
+}
+
+h2 > a {
+	font-family: 'Strait';
+	text-decoration: underline;
+}
+
+h3 > a {
+	font-family: 'Strait';
+}
+
+h1 {
+	font-size: 6em;
+	font-family: 'Strait';
+	color: $white;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+h2 {
+	text-align:center;
+	font-size: 2.5em;
+	color: $white;
+	font-family: 'Strait';
+	text-align: left;
+}
+
+h3 {
+	text-align: left;
+	font-size: 2.5em;
+	font-family: 'Fredoka One';
+	margin-bottom: 0;
+}
+
+li > a {
+  text-decoration: underline;
+}
+
+.archive-panel {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	height: auto;
+	max-width: 100%;
+}
+
+.archive {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	height: auto;
+	max-width: 100%;
+}
+
+.description {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+}
+
+.date {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	color: $white;
+	font-style: italic;
+	padding-top: 1em;
+	font-size: 0.75em;
+}
+
+.footer {
+	color: #ffffff; /* White */
+	width: 100%;
+	background-color: #1D1D1D;
+	margin-top: 0;
+	padding-top: 6em;
+	border-top: 1em solid #ffffff; /* White */
+}
+
+h4 {
+  color: #0D2A38; /* Dark Blue */
+  font-style: italic;
+}
+
+li {
+
+}
+
+li > a {
+	color: $yellow;
+}
+
+.jumbotron {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	height: 21em;
+	background-color: #1D1D1D;
+	width: 100%;
+    border-bottom: 1em solid $white;
+	z-index: 1;
+	padding: 0;	
+}
+
+.jumbotron-layout {
+	display: grid;
+	grid-template-columns:
+		minmax(min-content, max-content)
+		minmax(4em, 4em)
+		minmax(auto, auto);
+	grid-template-rows:
+		minmax(min-content, max-content)
+		minmax(4em, 4em)
+		minmax(min-content, max-content);
+	grid-template-areas:
+	'logo logo logo archive archive archive'
+	'logo logo logo archive archive archive'
+	'logo logo logo button1 button2 button3';
+	column-gap: 1.5em;
+	padding-top: 1em;
+	font-family: 'Strait';
+	
+	@media (max-width: 1200px) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto;
+		grid-template-areas: 'logo logo' 'button1 button3';
+		font-family: 'Strait';
+		padding-top: 1em;
+		grid-gap: 0em;
+	}
+}
+
+.blog-item-logo { 
+	grid-area: logo; 
+}
+
+.blog-item-archive { 
+	grid-area: archive;
+	padding: 0.75em 0.75em 0.75em 0.75em;
+	border-radius: 25px;
+	background: #39474B;
+	font-size: 0.5em;
+	color: $white;
+	max-width: 18em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.blog-item-button1 { grid-area: button1;
+	border-radius: 16px;
+	text-align: center;
+	background: $red;
+	padding: 0.25em 0.25em 0.25em 0.25em;
+	color: $white;
+	font-size: 0.75em;
+	width: 100%;
+	justify-items: center;
+	font-family: 'Fredoka One';
+}
+
+.blog-item-button2 { 
+	grid-area: button2;
+	border-radius: 16px;
+	text-align: center;
+	padding: 0.25em 0.25em 0.25em 0.25em;
+	color: $white;
+	font-size: 0.75em;
+	width: 100%;
+	justify-items: center;
+}
+
+.blog-item-button3 { grid-area: button3;
+	border-radius: 16px;
+	text-align: center;
+	background: $blue;
+	padding: 0.25em 0.25em 0.25em 0.25em;
+	color: $white;
+	font-size: 0.75em;
+	justify-items: center;
+}
+
+.navsection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}
+
+.blog-main {
+	display: grid;
+	grid-template-areas:
+	'leftgutter content rightgutter';
+	grid-template-columns: auto 75em auto;
+	
+}
+
+.blog-item-left { grid-area: leftgutter; }
+.blog-item-right { grid-area: rightgutter; }
+.blog-item-content { 
+	grid-area: content; 
+	border-radius: 24px;
+	background: $blue;
+	margin-bottom: 5em;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-left:5vw;
+	padding-right: 5vw;
+}
+
+.blog-post-content { 
+	grid-area: content;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-bottom: 5em;
+	z-index: 5;
+	padding-top: 8em;
+	margin-top: -5em;
+	width: 50em;
+}
+
+ul {
+	padding-left: 0;
+	justify-self: left;
+	font-family: 'Strait';
+	color: $white;
+	margin-left: 2em;
+}
+
+.blog-button {
+	color: $white;
+	text-decoration: none;
+}
+
+.numbered {
+	list-style-type: decimal;
+}
+
+.bulleted {
+	list-style-type: disc;
+}
+
+.nobullet {
+	list-style-type: none;
+	font-size: 1.5em;
+}
+
+.smallcaps {
+	font-variant: small-caps;
+}
+
+/* Mobile styles */
+
+@media (max-width: 1200px) {
+
+  .visible-mobile {
+    display: grid !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+}
+
+.archive {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	height: auto;
+	max-width: 100%;
+}
+
+.description {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+}
+
+.date {
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	color: $white;
+	font-style: italic;
+	padding-top: 1em;
+	font-size: 0.75em;
+}
+
+.article-subheader {
+    font-size: 2em;
+    text-align: left;
+}
+
+.article-title {
+    font-variant: small-caps;
+    font-size: 2.75em;
+}
+
+.background {
+
+}
+
+.blog-item-content { 
+	grid-area: content; 
+	border-radius: 0px;
+	background: $blue;
+	margin-bottom: 0em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.blog-main {
+    display: grid;
+    grid-template-areas: 'leftgutter content rightgutter';
+    grid-template-columns: auto auto auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 5em;
+}
+
+.blog-post-content {
+    grid-area: content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5em;
+    z-index: 5;
+    padding-top: 2em;
+    margin-top: -1em;
+	width: inherit;
+}
+  
+.blog-item-logo { 
+	grid-area: logo; 
+	place-self: center;
+	width: 75%;
+	margin-bottom: 1em;
+}
+
+.blog-item-button1 {
+    grid-area: button1;
+    border-radius: 0;
+    text-align: center;
+    background: #F95D62;
+    color: #FFFFFF;
+    font-size: 0.75em;
+    width: inherit;
+	font-family: 'Fredoka One';
+	padding: 0.25em 0.25em 0.25em 0.25em;
+	height: 100%;
+}
+
+.blog-item-button3 {
+	grid-area: button3;
+    border-radius: 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.75em;
+	width: inherit;
+    background: #5FA5D3;
+    padding: 0.25em 0.25em 0.25em 0.25em;
+	height: 100%;
+}
+
+.begin-content {
+    max-width: 790px;
+    margin: 0 auto;  
+    position: relative;
+    z-index: 1;
+    margin-bottom: calc(-100vh + 6px);
+    padding: 0 15px;
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-areas: 'leftgutter content content content content content rightgutter';
+	grid-template-columns: auto 5em 5em 5em 5em 5em auto;
+	grid-gap: 0em;
+	grid-template-rows: 5em;
+	margin-top: 1em;
+}
+
+.navsection {
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}
+
+.nobullet {
+	list-style-type: none;
+	font-size: 1em;
+}
+
+.jumbotron {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	height: 14em;
+	background-color: #1D1D1D;
+	width: 100%;
+    box-shadow:none;
+	z-index: 1;
+	padding: 0;	
+}
+
+.archive {
+    display: flex;
+	text-align: left;
+	justify-content: left;
+	height: auto;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.date {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    color: #FFFFFF;
+    font-style: italic;
+    padding-top: 1em;
+    font-size: 0.75em;
+	margin-left: 1em;
+}
+
+.description {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+	margin-left: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.footer {
+    color: #ffffff;
+    width: 100%;
+    background-color: #1D1D1D;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 1em solid #ffffff;
+}
+
+.container {
+
+}
+
+ul {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 1em;
+}
+
+h1 {
+	font-size: 3em;
+	text-align: left;
+	padding-top: 0em;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+  
+p {
+	text-align: left;
+	font-family: 'Strait';
+	margin-top: 1em;
+}
+  
+.row {
+	display: grid;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+
+.column {
+	display: grid;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+}

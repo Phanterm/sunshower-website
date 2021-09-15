@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+<h1 class="article-title">{{ page.name }}</h1>
+
+{{ content }}
+
+<h2 class="article-subheader">Posts</h2>
+<ul class="nobullet">
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% for post in filtered_posts %}
+	<li>{{ post.date | date: "%Y-%m-%d" }} - 
+    <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

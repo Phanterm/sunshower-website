@@ -1,0 +1,87 @@
+<div class="jumbotron">
+	<div class="navbar">
+		<img class="center" src="/assets/images/sunshower_logo_header.png" alt="Welcome to Sunshower!">
+	</div>
+		<nav>
+		<div class="navsection">
+			<div class="navgrid">
+					{% for item in site.data.navigation %}
+
+						{% if item.slot == "a" %}
+							<div id="raised hidden-mobile">
+								<div class="button1 navbutton hidden-mobile">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">
+										<img class="teaser-image" id="navimage"  src="/assets/images/{{item.image}}">
+									</a>
+								</div>
+							
+								<div class="link1">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">{{ item.name }}</a>
+								</div>
+							</div>
+						{% endif %}
+						
+						
+						{% if item.slot == "b" %}
+							<div id="lowered hidden-mobile">
+								<div class="button2 navbutton hidden-mobile">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">
+										<img class="teaser-image" id="navimage"  src="/assets/images/{{item.image}}">
+									</a>
+								</div>
+							
+								<div class="link2">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">{{ item.name }}</a>
+								</div>
+							</div>
+						{% endif %}
+						
+						
+						{% if item.slot == "c" %}
+							<div id="raised hidden-mobile">
+								<div class="button3 navbutton hidden-mobile">
+									<a href="{{ item.link }}">
+										<img class="teaser-image" id="navimage"  src="/assets/images/{{item.image}}">
+									</a>
+								</div>
+							
+								<div class="link3">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">{{ item.name }}</a>
+								</div>
+							</div>
+						{% endif %}
+						
+						
+						{% if item.slot == "d" %}
+							<div id="lowered hidden-mobile">
+								<div class="button4 navbutton hidden-mobile">
+									<a href="{{ item.link }}">
+										<img class="teaser-image" id="navimage"  src="/assets/images/{{item.image}}">
+									</a>
+								</div>
+							
+								<div class="link4">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">{{ item.name }}</a>
+								</div>
+							</div>
+						{% endif %}
+						
+						{% if item.slot == "e" %}
+							<div id="raised">
+								<div class="button5 navbutton hidden-mobile">
+									<a href="{{ item.link }}">
+										<img class="teaser-image" id="navimage"  src="/assets/images/{{item.image}}"/>
+									</a>
+								</div>
+							
+								<div class="link5">
+									<a href="{{ item.link }}" class="navbutton {% if page.url == item.link %}function activepage" id="activelink{% endif %}">{{ item.name }}</a>
+								</div>
+							</div>
+						{% endif %}							
+
+					{% endfor %}
+			</div>
+		</div>
+		</nav>
+</div>

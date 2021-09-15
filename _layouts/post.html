@@ -1,0 +1,17 @@
+---
+layout: blog
+type: post
+---
+<p class="article-category">category // {{ page.category}}</p>
+<h1 class="article-title">{{ page.title }}</h1>
+<h2 class="author-article">		  
+{% assign author = site.authors | where: 'short_name', page.author | first %}
+	{% if author %}
+		<a href="{{ author.url }}">{{ author.name }}</a>
+	{% endif %}
+</h2>
+<p class="date-article">{{ page.date }}</p>
+		<p class="blog">
+
+		</p>
+		{{ content }}

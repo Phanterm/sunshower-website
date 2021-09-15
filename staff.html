@@ -1,0 +1,52 @@
+---
+layout: default
+title: Staff
+colorscheme: "#65B869"
+bg-image: parasol_background_green.png
+---
+<div class="article-grid">
+	<div class="staff-item-left"></div>
+	<div class="article-content">
+		<h1 class="page-title" style="background:  {{page.colorscheme}}">
+		Staff
+		</h1>
+	</div>
+	<div class="staff-item-right"></div>
+</div>
+
+<div class="staff-grid">
+	<div class="staff-item-left hidden-mobile"></div>
+  {% for author in site.authors %}
+  <div class="staff-item-content-{{ author.grid_location }}">
+	<div class="flip-card">
+		<div class="flip-card-inner">
+				<div class="flip-card-front hidden-mobile">
+					<div class="staff-icon-grid" style="background: {{ author.favorite_color }}">
+						<div class="staff-icon-image">
+							<img id="staffimage" src="/assets/images/bios/{{author.staff_icon}}">
+						</div>
+						<div class="staff-icon-name">
+							<h3 style="margin-bottom: 0px, font-family: 'Teko'">{{ author.name }}</h3>
+						</div>
+						<div class="staff-icon-position">
+							<h4>{{ author.position }}</h4>
+						</div>
+					</div>
+				</div>
+		</div>
+			<div class="flip-card-back" style="background-color: {{ author.favorite_color }}">
+				<div class="staff-icon-image visible-mobile">
+					<img id="staffimage" src="/assets/images/bios/{{author.staff_icon}}">
+				</div>
+			  <h3>{{ author.name }}</h3>
+			  <h3><i>{{author.position}}</i></h3>
+			  <p>{{ author.content }}</p>
+			  <h5 class="hidden-mobile">Class</h5>
+			  <hr class="super-hr hidden-mobile">
+			  <h4 class="hidden-mobile">{{ author.class }}</h4>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+<div class="staff-item-right hidden-mobile"></div>
+</div>

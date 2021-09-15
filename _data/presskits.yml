@@ -1,0 +1,56 @@
+- type: company
+  name: Sunshower LLC
+  developer: n/a
+  release-date: n/a
+  platforms: n/a
+  price: n/a
+  availability: n/a
+  languages: n/a
+  esrb: n/a
+  press-contact: hunter@studiosunshower.com
+  website: www.studiosunshower.com
+  description: "
+  <p>Sunshower is a cooperative game company based out of Seattle, WA. Formed in 2020, Sunshower is a response and challenge to traditional company models in the entertainment industry. We are completely remote.</p>
+  
+  <p>Ours is a philosophy is to craft games that are fun to play first and foremost, while experimenting with all the ingredients for interesting and unique experiences along the way. In other words, we believe that while the games we create should be fun, we should have fun creating them!</p>
+  "
+  link1: https://twitter.com/studiosunshower
+  link2: https://discord.gg/9jrXWTjvVf
+  link3: https://www.youtube.com/channel/UC234FWrEan_qpsjAaOBVl0w
+  link4: /blog.html
+  link5:
+  image1: /assets/images/icon_twitter.png
+  image2: /assets/images/icon_discord.png
+  image3: /assets/images/icon_yt.png
+  image4: /assets/images/icon_blog.png
+  image5: 
+- type: project
+  name: Coruncopia
+  developer: Sunshower
+  release-date: Q4 2022
+  platforms: Windows, Mac, Linux
+  price: TBA
+  availability: Digital Download
+  languages: English
+  esrb: Unrated
+  press-contact: hunter@studiosunshower.com
+  website: www.studiosunshower.com
+  description: "
+            <h2>Summary</h2>
+                <p>Coruncopia is a top-down action RPG where you take control of Nil, a mysterious old druid on a mission to defend his world against invaders from an alien realm. With a completely procedurally hand crafted world and a robust magic spell creation system boasting thousands of combinations, you'll never experience Coruncopia the same way twice!</p>
+                <p>Take on eight dungeons in any order you choose as you unravel a story that brings the world of Coruncopia and its characters to life. Be warned, however – the game knows what you are capable of, and will dynamically transform itself to challenge you the closer you are to your goal! What lies before the player is a tale of mercy, but the path to the end of that journey will be anything but merciful.</p>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Explore a dynamic, procedurally hand-crafted world.</li>
+                <li>Create your own custom, powerful spells using the 'Almanactor' System.</li>
+                <li>Immerse in a carefully handcrafted narrative full of memorable and interesting characters in a unique setting like no other.</li>
+            </ul>
+            "
+  link1: /assets/images/projects/coruncopia_screen.png
+  link2: /assets/images/projects/coruncopia_screen.png
+  link3: /assets/images/projects/coruncopia_screen.png
+  link4: /assets/images/projects/coruncopia_screen.png
+  image1: /assets/images/projects/coruncopia_screen.png
+  image2: /assets/images/projects/coruncopia_screen.png
+  image3: /assets/images/projects/coruncopia_screen.png
+  image4: /assets/images/projects/coruncopia_screen.png

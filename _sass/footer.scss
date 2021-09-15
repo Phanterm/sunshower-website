@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
+
+$red: #F95D62;
+$blue: #5FA5D3;
+$green: #65B869;
+$yellow: #D29160;
+$white: #FFFFFF;
+$navy: #0D2A38;
+
+a.footer-link {
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Fredoka One';
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a.footer-link:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding-right: 3em;
+}
+
+.container {
+	text-align: center;
+}
+
+.footer-hr {
+	border-top: 1px solid $white;
+	border-bottom: 0px solid $white;
+	border-left: 0px solid $white;
+	border-right: 0px solid $white;
+}
+.footer__menu {
+	color: #ffffff; /* White */
+	list-style: none;
+	display: table;
+	justify-content: center;
+	height: 3em;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer__menu li {  
+	padding: 0 1rem 1rem 1rem;
+	font-family: 'Fredoka One';
+}
+
+.footer__menu li > a {  
+	color: #ffffff; /* White */
+	text-decoration: none;
+}
+
+.footer {
+	color: #FFFFFF;
+	width: 100%;
+	background-color: $red;
+	margin-top: 0;
+	padding-top: 2em;
+}
+
+.img-icon {
+  width: 100%;
+  max-width: inherit;
+  margin-top: inherit;
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+.row {
+	display: flex;
+	margin: inherit;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mobile styles */
+@media (max-width: 1200px) {
+  .visible-mobile {
+    display: grid !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+}
+
+.footer {
+	color: $white;
+	width: 100%;
+	background-color: $navy;
+	margin-top: 0;
+	padding-top: 2em;
+}
+.footer-container {
+	text-align: center;
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-areas: 'leftgutter content content content content content rightgutter';
+	grid-template-columns: auto 5em 5em 5em 5em 5em auto;
+	grid-gap: 0em;
+	grid-template-rows: 5em;
+	margin-top: 1em;
+}
+
+.footer__menu {
+	color: #ffffff; /* White */
+	list-style: none;
+	display: grid;
+	height: 4em;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+  
+.footer__menu li {  
+	padding: 0 0 0 0;
+}
+  
+.footer__menu li > a {  
+	color: #ffffff; /* White */
+	text-decoration: none;
+}
+  
+.footer-link > img {
+	display: grid;
+	width: 55%;
+	height: 55%;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+}
+.img-icon {
+	width: 8%;
+	height: 5%;
+	max-width: inherit;
+	margin-top: inherit;
+	justify-items: inherit;
+	justify-content: inherit;
+	padding-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+}
