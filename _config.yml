@@ -1,3 +1,6 @@
+baseurl: /
+url: https://phanterm.github.io/sunshower-website/
+
 collections:
   authors:
     output: true
