@@ -1,15 +1,112 @@
 ---
 layout: default
 title: Presskit
-colorscheme: "#FCDDAD"
+colorscheme: "#D29160"
 bg-image: parasol_background_yellow.png
 ---
 <div class="article-grid">
 	<div class="staff-item-left"></div>
-	<div class="article-content">
-		<h1 class="page-title" style="background:  {{page.colorscheme}}">
-		Presskit
-		</h1>
-	</div>
+		<div class="article-content">
+			<h1 class="page-title" style="background: 	{{page.colorscheme}}">
+				Presskit
+			</h1>
+			{% for item in site.data.presskits %}
+				{% if item.type == "company" %}
+				<div class="article-filled-content-a">
+					<h2>Our Story So Far...</h2>
+						{{ item.description }}
+				</div>
+				<div class="article-filled-content-b">
+					<h2>Resources</h2>
+						<div class="article-presskit-thumbnail-grid">
+						<div class= "padboy">
+							<a target="_blank" href="{{ item.link1 }}">
+								<img class="resource-image" src="{{ item.image1 }}" />
+							</a>
+						</div>
+						<div class= "padboy">
+							<a target="_blank" href="{{ item.link2 }}">
+								<img class="resource-image" src="{{ item.image2 }}" />
+							</a>
+						</div>
+						<div class= "padboy">
+							<a target="_blank" href="{{ item.link3 }}">
+								<img class="resource-image" src="{{ item.image3 }}" />
+							</a>
+						</div>
+						<div class= "padboy">
+							<a target="_blank" href="{{ item.link4 }}">
+								<img class="resource-image" src="{{ item.image4 }}" />
+							</a>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+			{% endfor %}
+		</div>
 	<div class="staff-item-right"></div>
+</div>
+
+<div class="article-grid">
+	<div class="staff-item-left"></div>
+	{% for item in site.data.presskits %}
+		{% if item.type != "company" %}
+		<div class="article-content">
+			<div class="article-presskit-grid">
+				<div class="article-presskit-leftcolumn">
+					<h1>Fact Sheet</h1>
+							<h3>Developer</h3> 
+								<p>{{ item.developer }}</p>
+							<h3>Release Date</h3>
+								<p>{{ item.release-date }}</p>
+							<h3>Platforms</h3>
+								<p>{{ item.platforms }}</p>
+							<h3>Price</h3>
+								<p>{{ item.price }}</p>
+							<h3>Availability</h3>
+								<p>{{ item.availability }}</p>
+							<h3>Languages</h3>
+								<p>{{ item.languages }}</p>
+							<h3>ESRB Rating</h3>
+								<p>{{ item.esrb }}</p>
+							<h3>Press Contact</h3>
+								<p><a href="mailto:{{ item.press-contact }}">{{ item.press-contact }}</a></p>
+							<h3>Website</h3>
+								<p><a href="{{ item.website }}">Link</a></p>
+				</div>
+				<div class="article-presskit-content">
+					<div class="article-presskit-content-titlecard">
+						<h1>{{ item.name }}</h1>
+					</div>
+					{{ item.description }}
+				</div>
+				<div class="article-presskit-thumbnail">
+					<div class="article-presskit-thumbnail-grid-projects">
+						<div class= "project-thumbnails">
+							<a target="_blank" href="{{ item.link1 }}">
+								<img class="resource-image-projects" src="{{ item.image1 }}" />
+							</a>
+						</div>
+						<div class= "project-thumbnails">
+							<a target="_blank" href="{{ item.link2 }}">
+								<img class="resource-image-projects" src="{{ item.image2 }}" />
+							</a>
+						</div>
+						<div class= "project-thumbnails">
+							<a target="_blank" href="{{ item.link3 }}">
+								<img class="resource-image-projects" src="{{ item.image3 }}" />
+							</a>
+						</div>
+						<div class= "project-thumbnails">
+							<a target="_blank" href="{{ item.link4 }}">
+								<img class="resource-image-projects" src="{{ item.image4 }}" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	{% endfor %}
+		<div class="staff-item-right"></div>
 </div>

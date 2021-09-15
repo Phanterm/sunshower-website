@@ -1,22 +1,35 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial scale= 1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
     <title>About</title>
 	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>About</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="About" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"/about.html","headline":"About","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
 	<style>
-	
-	#footer {
-		color: #ffffff; /* White */
-		width: 100%;
-		background-color: #F95D62;
-		padding-top: 6em;
-	}
 	
 	#navimage {
 		background-color: #F95D62;
 		border: 18px solid #F95D62;
 		border-radius: 22em;
+		box-shadow: 10px 10px 10px grey;
 	}
 	
 	#animate-area { 
@@ -26,12 +39,7 @@
 
 	animation: animatedBackground 60s linear infinite;
 	}
-		
-	#activelink 
-	{
-	text-shadow: 
-	0.0px 10.0px 0.02px #F95D62, 9.8px 2.1px 0.02px #F95D62, 4.2px -9.1px 0.02px #F95D62, -8.0px -6.0px 0.02px #F95D62, -7.6px 6.5px 0.02px #F95D62, 4.8px 8.8px 0.02px #F95D62, 9.6px -2.8px 0.02px #F95D62, -0.7px -10.0px 0.02px #F95D62, -9.9px -1.5px 0.02px #F95D62, -3.5px 9.4px 0.02px #F95D62, 8.4px 5.4px 0.02px #F95D62, 7.1px -7.0px 0.02px #F95D62, -5.4px -8.4px 0.02px #F95D62, -9.4px 3.5px 0.02px #F95D62, 1.4px 9.9px 0.02px #F95D62, 10.0px 0.8px 0.02px #F95D62, 2.9px -9.6px 0.02px #F95D62, -8.7px -4.8px 0.02px #F95D62, -6.6px 7.5px 0.02px #F95D62, 5.9px 8.0px 0.02px #F95D62, 9.1px -4.1px 0.02px #F95D62, -2.1px -9.8px 0.02px #F95D62, -10.0px -0.1px 0.02px #F95D62, -2.2px 9.8px 0.02px #F95D62, 9.1px 4.2px 0.02px #F95D62, 6.1px -8.0px 0.02px #F95D62, -6.5px -7.6px 0.02px #F95D62, -8.8px 4.7px 0.02px #F95D62, 2.7px 9.6px 0.02px #F95D62, 10.0px -0.6px 0.02px #F95D62, 1.5px -9.9px 0.02px #F95D62, -9.3px -3.6px 0.02px #F95D62, -5.5px 8.4px 0.02px #F95D62, 7.0px 7.2px 0.02px #F95D62, 8.5px -5.3px 0.02px #F95D62, -3.4px -9.4px 0.02px #F95D62, -9.9px 1.3px 0.02px #F95D62, -0.8px 10.0px 0.02px #F95D62, 9.6px 2.9px 0.02px #F95D62, 4.9px -8.7px 0.02px #F95D62, -7.5px -6.7px 0.02px #F95D62, -8.1px 5.9px 0.02px #F95D62, 4.0px 9.2px 0.02px #F95D62, 9.8px -2.0px 0.02px #F95D62, 0.2px -10.0px 0.02px #F95D62, -9.7px -2.3px 0.02px #F95D62, -4.3px 9.0px 0.02px #F95D62, 7.9px 6.1px 0.02px #F95D62;
-}
+
 	-webkit-font-smoothing: antialiased;
 	}
 	
@@ -49,10 +57,10 @@
 					
 
 						
-							<div id="raised">
-								<div class="button1 navbutton>
-									<a href="/about.html">
-										<img class="teaser-image" id="navimage"  src="/assets/images/button_about.png"/>
+							<div id="raised hidden-mobile">
+								<div class="button1 navbutton hidden-mobile">
+									<a href="/about.html" class="navbutton function activepage" id="activelink">
+										<img class="teaser-image" id="navimage"  src="/assets/images/button_about.png">
 									</a>
 								</div>
 							
@@ -79,10 +87,10 @@
 						
 						
 						
-							<div id="lowered">
-								<div class="button2 navbutton>
-									<a href="/blog.html">
-										<img class="teaser-image" id="navimage"  src="/assets/images/button_blog.png"/>
+							<div id="lowered hidden-mobile">
+								<div class="button2 navbutton hidden-mobile">
+									<a href="/blog.html" class="navbutton ">
+										<img class="teaser-image" id="navimage"  src="/assets/images/button_blog.png">
 									</a>
 								</div>
 							
@@ -109,10 +117,10 @@
 						
 						
 						
-							<div id="raised">
-								<div class="button3 navbutton>
+							<div id="raised hidden-mobile">
+								<div class="button3 navbutton hidden-mobile">
 									<a href="/projects.html">
-										<img class="teaser-image" id="navimage"  src="/assets/images/button_projects.png"/>
+										<img class="teaser-image" id="navimage"  src="/assets/images/button_projects.png">
 									</a>
 								</div>
 							
@@ -139,10 +147,10 @@
 						
 						
 						
-							<div id="lowered">
-								<div class="button4 navbutton>
+							<div id="lowered hidden-mobile">
+								<div class="button4 navbutton hidden-mobile">
 									<a href="/staff.html">
-										<img class="teaser-image" id="navimage"  src="/assets/images/button_staff.png"/>
+										<img class="teaser-image" id="navimage"  src="/assets/images/button_staff.png">
 									</a>
 								</div>
 							
@@ -169,13 +177,13 @@
 						
 						
 							<div id="raised">
-								<div class="button4 navbutton>
+								<div class="button5 navbutton hidden-mobile">
 									<a href="/presskit.html">
 										<img class="teaser-image" id="navimage"  src="/assets/images/button_presskit.png"/>
 									</a>
 								</div>
 							
-								<div class="link4">
+								<div class="link5">
 									<a href="/presskit.html" class="navbutton ">Presskit</a>
 								</div>
 							</div>
@@ -210,11 +218,16 @@
 		<h1 class="page-title" style="background: #F95D62">
 		About
 		</h1>
-		<div class="article-blank-content">
-			<p>Sunshower is a small indie game cooperative created to fulfill the need for high quality, lovingly hand-crafted experiences. Our mission is simple: deliver iconic games that will withstand the test of time. The way to achieve and sustain that mission statement is through our philosophy of weathering the storm in a demanding industry that changes every day.</p>
-		</div>
-		<div class="article-filled-content">
-			<p>Our studio was founded not simply to make great games, but to allow the great people who bring those games to life to own their work. The name "Sunshower" is fitting for many reasons besides the local weather. Sunshowers are a rare and beautiful thing, providing simultaneously quiet contemplation and bright warmth. Whether you prefer your days sunny or rainy, sunshowers have something for everyone. As both artists and artisans, the spirit we bring to our games is a celebration of expression and work well done.</p>
+		<div class="about-content">
+			<p class="smallcaps">Sunshower is a small independent game cooperative formed in service to high quality, lovingly hand-crafted experiences.</p>
+			
+			<p>Our mission is simple: deliver iconic games that will withstand the test of time. The way to achieve and sustain that mission statement is through our philosophy of weathering the storm in a demanding industry that changes every day.</p>
+
+			<p>But great games need great people to bring them to life.  There are no bosses; each of us is a leader. There are no discrepancies in salary; each of us has equal representation. At Sunshower, each of us owns our work.</p>
+			
+			<p>Our name is fitting for many reasons besides the local weather in Seattle. Sunlit rain is a rare and beautiful thing, providing simultaneously quiet contemplation and bright warmth. And whether you prefer your days sunny or rainy, sunshowers have something for everyone. As both artists and artisans, the spirit we bring to our games is a celebration of expression and work well done.</p>
+			
+			<img src="/assets/images/parasol_white.png" />
 		</div>
 	</div>
 	<div class="staff-item-right"></div>
@@ -222,45 +235,44 @@
 
 			</div>
 	</div>
-		<footer id="footer">
-        <div class="container">
-			<column>
-				<row>
-				  <a class="footer-link" href="mailto:hunter@studiosunshower.com"><img class="img-icon" src="/assets/images/icon_mail.png"></a>
-				  <a class="footer-link" href="https://twitter.com/studiosunshower"><img class="img-icon" src="/assets/images/icon_twitter.png"></a>
-				  <a class="footer-link" href=https://www.youtube.com/channel/UC234FWrEan_qpsjAaOBVl0w><img class="img-icon" src="/assets/images/icon_yt.png"></a>
-				  <a class="footer-link" href="https://www.facebook.com/studiosunshower/"><img class="img-icon" src="/assets/images/icon_fb.png"></a>
-				</row>
-				<hr class="footer-hr">
-				<row>
-				  <ul class="footer__menu">
-				  <li>©  
-					  <script type="text/javascript">
-					  var d = new Date()
-					  document.write(d.getFullYear())
-					  </script>
-					  Sunshower LLC. All Rights Reserved.
-					</li>
-				</ul>
-			  </row>
-			</column>
-        </div>
-      </footer>
+		<footer class="footer">
+		<div class="footer-grid">
+		<div class="blog-item-left"></div>
+			<div class="footer-item">
+				<a class="footer-link" href="mailto:hunter@studiosunshower.com"><img class="img-icon" src="/assets/images/icon_mail.png"></a>
+			</div>
+			<div class="footer-item">
+				<a class="footer-link" href="https://twitter.com/studiosunshower"><img class="img-icon" src="/assets/images/icon_twitter.png"></a>
+			</div>
+			<div class="footer-item">
+				<a class="footer-link" href=https://www.youtube.com/channel/UC234FWrEan_qpsjAaOBVl0w><img class="img-icon" src="/assets/images/icon_yt.png"></a>
+			</div>
+			<div class="footer-item">
+				<a class="footer-link" href="https://www.facebook.com/studiosunshower/"><img class="img-icon" src="/assets/images/icon_fb.png"></a>
+			</div>
+			<div class="footer-item">
+				<a class="footer-link" href="https://discord.gg/9jrXWTjvVf"><img class="img-icon" src="/assets/images/icon_discord.png"></a>
+			</div>
+			<div class="blog-item-right"></div>
+		</div>
+		<div class="container">
+		<column>
+			<row>
+			  <ul class="footer__menu">
+			  <li>©  
+				  <script type="text/javascript">
+				  var d = new Date()
+				  document.write(d.getFullYear())
+				  </script>
+				  Sunshower LLC. All Rights Reserved.
+				</li>
+			</ul>
+		  </row>
+		</column>
+	</div>
+  </footer>
 	<script type="text/javascript" src="/assets/js/loader.js">
-	var coll = document.getElementsByClassName("rollout");
-	var i;
 
-	for (i = 0; i < coll.length; i++) {
-	  coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.display === "block") {
-		  content.style.display = "none";
-		} else {
-		  content.style.display = "block";
-		}
-	  });
-	}
 	</script>
   </body>
 </html>

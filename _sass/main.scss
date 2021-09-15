@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
 
 $red: #F95D62;
-$blue: #56CCF2;
-$green: #63FFAB;
-$yellow: #FCDDAD;
+$blue: #5FA5D3;
+$green: #65B869;
+$yellow: #D29160;
 $white: #FFFFFF;
 $navy: #0D2A38;
 
@@ -77,7 +77,7 @@ $navy: #0D2A38;
 	display: flex;
 	background-color: transparent;
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 	perspective: 1000px;
 	border-radius: 5em;
 	align-self: center;
@@ -90,9 +90,8 @@ $navy: #0D2A38;
 	position: relative;
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border-radius: 5em;
-	height: 20em;
+	// height: 20em;
 	width: 18em;
 }
 
@@ -114,7 +113,7 @@ $navy: #0D2A38;
 .flip-card-back {
 	color: white;
 	transform: rotateY(180deg);
-	height: 24em;
+	// height: 24em;
 	width: 14em;
 	border-radius: 5em;
 	padding: 2em 2em 2em 2em;
@@ -154,6 +153,18 @@ $navy: #0D2A38;
 	text-align: left;
 }
 
+.footer-grid {
+	display: grid;
+	grid-template-areas: 'leftgutter content content content content content rightgutter';
+	grid-template-columns: auto 5em 5em 5em 5em 5em auto;
+	grid-gap: 3em;
+}
+
+.footer-item {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -186,8 +197,15 @@ h5 {
 .page-title {
 	font-family: 'Fredoka One';
 	color: $white;
-	border-radius: 24px;
-	
+	border-radius: 0.75em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	box-shadow: 10px 10px 10px grey;
+}
+
+.smallcaps {
+	font-variant: small-caps;
+	font-size: 1.5em;
 }
 
 .super-hr {
@@ -215,6 +233,7 @@ h5 {
 	grid-template-columns: auto 20em 20em 20em auto;
 	grid-template-rows: 28em;
 	grid-gap:2em;
+	margin-bottom: 8em;
 }
 
 .staff-item-left { grid-area: leftgutter; }
@@ -243,7 +262,7 @@ h5 {
 	border-radius: 5em;
 	background: $green;
 	padding: 2em 2em 2em 2em;
-	height: 24em;
+	// height: 24em;
 	width: 14em;
 }
 
@@ -289,7 +308,67 @@ h5 {
     margin:0 auto;
     display: block;
     text-align: center;
-  }
+	}
+  
+  .visible-mobile {
+    display: inline !important;
+	}
+
+  .hidden-mobile {
+    display: none !important;
+	}
+
+.flip-card {
+	border-radius: 0;
+}
+
+.flip-card-front {
+	right: 13em;
+}
+
+.flip-card-back {
+	transform: none;
+	border-radius: 0;
+	left: 5em;
+}
+
+.flip-card-inner {
+	border-radius: 0;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: none;
+}
+
+.staff-grid {
+	display: grid;
+	grid-template-areas:
+	'leftgutter content rightgutter'
+	'leftgutter content rightgutter'
+	'leftgutter content rightgutter';
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 28em;
+	grid-gap: 0;
+	margin-bottom: 8em;
+}
+
+.staff-icon-grid {
+	display: grid;
+	width: 20em;
+	height: 28em;
+	border-radius: 0;
+	padding-top: 1em;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+
+.staff-icon-name {
+	padding-bottom: 0;
+}
+
+.staff-icon-image {
+	padding-bottom: 0;
 }
 
 html {
@@ -314,9 +393,9 @@ h2 > a {
 }
 
 h3 > a {
-color: $navy;
-font-size: 0.5em;
-font-family: 'Teko';
+	color: $navy;
+	font-size: 0.5em;
+	font-family: 'Teko';
 }
 
 h1 {
@@ -358,8 +437,199 @@ ul {
 
 .wrapper-main {
 	margin: auto;
+	margin-top: auto;
 	overflow: hidden;
 	margin-top: 40em;
-	padding-bottom: 20em;
+	padding-bottom: 0em;
+}
+
+}
+
+@media (max-width: 768px) {  
+  .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+	}
+  
+  .visible-mobile {
+    display: inline !important;
+	}
+
+  .hidden-mobile {
+    display: none !important;
+	}
+
+.staff-item-content-a { 
+	grid-area: contenta; 
+}
+.staff-item-content-b { 
+	grid-area: contentc; 
+}
+.staff-item-content-c { 
+	grid-area: contentb; 
+}
+.staff-item-content-d { 
+	grid-area: content; 
+}
+
+.flip-card {
+	border-radius: 0;
+}
+
+.flip-card-front {
+	right: 0;
+}
+
+.flip-card-back {
+	transform: none;
+	border-radius: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 2em;
+	height: 26em;
+}
+
+.flip-card-back > h4 {
+	position: absolute;
+	color: #FFFFFF;
+	font-family: 'Teko';
+	text-align: left;
+	font-size: 3em;
+	font-style: italic;
+	top: 82%;
+	left: 1em;
+}
+
+.flip-card-back > p {
+	padding-left: 0;
+	padding-right: 4em;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.super-hr {
+	left: 3%;
+}
+
+.flip-card-inner {
+	border-radius: 0;
+	width: 100%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: none;
+}
+
+.staff-grid {
+	display: grid;
+	grid-template-areas:
+	'contenta'
+	'contentb'
+	'contentc';
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 30em 30em 30em;
+	grid-gap: 0;
+	margin-bottom: 0;
+
+}
+
+.staff-icon-grid {
+	display: grid;
+	width: 20em;
+	border-radius: 0;
+	padding-top: 1em;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+	overflow: hidden;
+}
+
+.staff-icon-name {
+	padding-bottom: 0;
+}
+
+.staff-icon-image {
+	padding-bottom: 0;
+}
+
+html {
+
+}
+
+body {
+}
+
+p {
+	text-align:center;
+	font-family: 'Strait';
+}
+
+a {
+	color: #0D2A38;
+	text-decoration: none;
+}
+
+h2 > a {
+
+}
+
+h3 > a {
+	color: $navy;
+	font-size: 0.5em;
+	font-family: 'Teko';
+}
+
+h1 {
+	text-align:center;
+	font-size: 4em;
+	font-family: 'Fredoka One';	
+	margin-bottom: 0px;
+	margin-top: 1.5em;
+}
+
+h2 {
+	text-align:center;
+	font-size: 3em;
+	color: #0D2A38; /* Dark Blue */
+	font-family: 'Fredoka One';
+}
+
+h3 {
+	text-align:center;
+	font-size: 2em;
+	color: #0D2A38; /* Dark Blue */
+	font-family: 'Fredoka One';
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+li > a {
+  text-decoration: underline;
+}
+
+
+li {
+
+}
+
+.page-title {
+	
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+.wrapper-main {
+	margin: auto;
+	margin-top: auto;
+	overflow: hidden;
+	margin-top: 40em;
+	padding-bottom: 0em;
+}
+
 }
 

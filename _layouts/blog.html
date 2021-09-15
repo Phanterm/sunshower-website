@@ -2,36 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial scale= 1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
     <title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/assets/css/styles-blog.css">
+	{% feed_meta %}
+    {% seo %}
 	<style>
-	
-	#footer {
-		color: #ffffff; /* White */
-		width: 100%;
-		background-color: #0D2A38;
-		margin-top: 0;
-		padding-top: 6em;
-	}
-	
+		.footer {
+			background-color: #1D1D1D;
+		}
 	</style>
-	{% if page.custom_css %}
-		{% for stylesheet in page.custom_css %}
-			<link rel="stylesheet" href="/assets/css/{{ page.custom_css }}.css">
-		{% endfor %}
-	{% endif %}
   </head>
-  <body style ="margin-right: 0px;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;">
 		{% include navigation-blog.html %}
-	<div class="background">
-	<div class="background-image hidden-mobile"></div>
-	<div class="blog-main">
-		<div class="blog-item-left"></div>
-			<div class="blog-post-content">
-			{{ content }}
+		<body style ="margin-right: 0px;margin-top: 0px;margin-left: 0px;margin-bottom: 0px;">
+		<div class="background">
+		<div class="background-image hidden-mobile"></div>
+		<div class="blog-main">
+			<div class="blog-item-left"></div>
+				<div class="blog-post-content">
+				{{ content }}
+			</div>
+			<div class="blog-item-right"></div>
 		</div>
-		<div class="blog-item-right"></div>
-	</div>
-	</div>
-	{% include footer.html %}
+		</div>
+		{% include footer.html %}
   </body>
 </html>

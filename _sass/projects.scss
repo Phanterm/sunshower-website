@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
 
 $red: #F95D62;
-$blue: #56CCF2;
-$green: #63FFAB;
-$yellow: #FCDDAD;
+$blue: #5FA5D3;
+$green: #65B869;
+$yellow: #D29160;
 $white: #FFFFFF;
 $navy: #0D2A38;
 
@@ -124,6 +124,7 @@ $navy: #0D2A38;
 	z-index: 1;
 	right: -8em;
 	width: 80%;
+	box-shadow: 10px 10px 10px grey;
 }
 
 
@@ -189,7 +190,6 @@ $navy: #0D2A38;
 	list-style-type: disc;
 	padding-left: 0;
 	margin-top: 0;
-	margin-bottom: 0;
 }
 .thumbnail-grid {
 	grid-area: thumbnail-grid;
@@ -202,10 +202,17 @@ $navy: #0D2A38;
 	grid-gap: 1em;
 }
 
-.thumbnail-grid > a {
+.thumbnail-grid > img {
 	max-width: 17em;
 	max-height: 10em;
 	border-radius: 48px;
 	align-self: center;
 	margin-left: auto;
+}
+
+.thumbnail-image {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+	border-radius: 1em;
 }
