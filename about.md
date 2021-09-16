@@ -20,7 +20,7 @@ bg-image: parasol_background_red.png
 			
 			<p>Our name is fitting for many reasons besides the local weather in Seattle. Sunlit rain is a rare and beautiful thing, providing simultaneously quiet contemplation and bright warmth. And whether you prefer your days sunny or rainy, sunshowers have something for everyone. As both artists and artisans, the spirit we bring to our games is a celebration of expression and work well done.</p>
 			
-			<img src="/assets/images/parasol_white.png" />
+			<img src="{{ site.baseurl }}/assets/images/parasol_white.png" />
 		</div>
 	</div>
 	<div class="staff-item-right"></div>

@@ -78,7 +78,7 @@ $navy: #0D2A38;
 .background-image {
 	position: relative;
 	height: 5em;
-	background-image: url(/assets/images/background/bluegrid.svg);
+	background-image: url("{{ site.baseurl }}/assets/images/background/bluegrid.svg");
 	background-repeat: repeat-x;
 	opacity: 0.75;
 	z-index: 1;

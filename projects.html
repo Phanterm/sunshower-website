@@ -20,7 +20,7 @@ bg-image: parasol_background_blue.png
 		<div class="article-content">
 		{% for item in site.data.projects %}
 			<button type="button" class="project-collapsed">
-				<img src="/assets/images/projects/{{item.banner-image}}"/>
+				<img src="{{ site.baseurl }}/assets/images/projects/{{item.banner-image}}"/>
 				<h1>{{ item.name }}</h1>
 				<h2>{{ item.tagline }}</h2>
 			</button>
@@ -34,14 +34,14 @@ bg-image: parasol_background_blue.png
 					<p>{{ item.infobox }}</p>
 				</div>
 				<div class="thumbnail-grid">
-				<a target="_blank" href="/assets/images/projects/{{ item.thumb1 }}">
-					<img class="thumbnail-image" src="/assets/images/projects/{{ item.thumb1 }}" />
+				<a target="_blank" href="{{ site.baseurl }}/assets/images/projects/{{ item.thumb1 }}">
+					<img class="thumbnail-image" src="{{ site.baseurl }}/assets/images/projects/{{ item.thumb1 }}" />
 				</a>
 				<a target="_blank" href="/assets/images/projects/{{ item.thumb2 }}">
-					<img class="thumbnail-image" src="/assets/images/projects/{{ item.thumb2 }}" />
+					<img class="thumbnail-image" src="{{ site.baseurl }}/assets/images/projects/{{ item.thumb2 }}" />
 				</a>
-				<a target="_blank" href="/assets/images/projects/{{ item.thumb3 }}">
-					<img class="thumbnail-image" src="/assets/images/projects/{{ item.thumb3 }}" />
+				<a target="_blank" href="{{ site.baseurl }}/assets/images/projects/{{ item.thumb3 }}">
+					<img class="thumbnail-image" src="{{ site.baseurl }}/assets/images/projects/{{ item.thumb3 }}" />
 				</a>
 				</div>
 
