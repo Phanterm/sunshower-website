@@ -1,1 +1,1 @@
-Sitemap: https://phanterm.github.io/sunshower-website//sitemap.xml
+Sitemap: https://phanterm.github.io/sunshower-website/sitemap.xml

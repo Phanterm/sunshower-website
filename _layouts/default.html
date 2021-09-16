@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon-16x16.png">
+	<link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+	<link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
     <title>{{ page.title }}</title>
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 	{% feed_meta %}
     {% seo %}
 	<style>
@@ -23,7 +23,7 @@
 	}
 	
 	#animate-area { 
-	background-image: url("assets/images/background/{{page.bg-image}}");
+	background-image: url("{{site.baseurl}}/assets/images/background/{{page.bg-image}}");
 	background-position: 0px 0px;
 	background-repeat: both;
 
@@ -40,11 +40,12 @@
 		{% include navigation.html %}
 		{% include transition.html %}
 			<div class="wrapper-main">
+				<p>Hello I am a potato</p>
 				{{ content }}
 			</div>
 	</div>
 	{% include footer.html %}
-	<script type="text/javascript" src="assets/js/loader.js">
+	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/loader.js">
 
 	</script>
   </body>
