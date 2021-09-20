@@ -5,17 +5,12 @@ custom_css: blog
 type: archive
 colorscheme: "#5FA5D3"
 ---
-<h1>Latest Posts</h1>
-
-		<ul>
+<h1 class="smallcaps">Archive</h1>
+		
+		<ul class="nobullet">
 		  {% for post in site.posts %}
-			<li class="archive">
-			  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-			</li>
-			<li class="date">{{ post.date }}</li>
-			<li class="description">
-			  <p>{{ post.excerpt }}</p>
-			</li>
+			<li>{{ post.date | date: "%Y-%m-%d" }} - 
+			<a href="{{ post.url }}">{{ post.title }}</a></li>
 		  {% endfor %}
 		</ul>
 

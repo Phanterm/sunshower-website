@@ -1,5 +1,3 @@
----
----
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
 
 $red: #F95D62;
@@ -78,7 +76,7 @@ $navy: #0D2A38;
 .background-image {
 	position: relative;
 	height: 5em;
-	background-image: url(/assets/images/background/bluegrid.svg);
+	background-image: url("/assets/images/background/bluegrid.svg");
 	background-repeat: repeat-x;
 	opacity: 0.75;
 	z-index: 1;

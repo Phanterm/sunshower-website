@@ -1,5 +1,3 @@
----
----
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Teko|Strait');
 
 $red: #F95D62;
@@ -12,7 +10,7 @@ $navy: #0D2A38;
 .project-collapsed {
 	display: grid;
 	grid-template-areas: 
-		'tagline tagline tagline tagline' 
+		'tagline tagline tagline tagline'  
 		'title title title title';
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: 5em;

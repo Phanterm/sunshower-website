@@ -1,5 +1,5 @@
-baseurl: /
-url: https://phanterm.github.io/sunshower-website/
+baseurl: ""
+url: https://studiosunshower.com
 
 collections:
   authors:

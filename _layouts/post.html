@@ -10,7 +10,7 @@ type: post
 		<a href="{{ author.url }}">{{ author.name }}</a>
 	{% endif %}
 </h2>
-<p class="date-article">{{ page.date }}</p>
+<p class="date-article">{{ page.date | date: '%B %d, %Y' }}</p>
 		<p class="blog">
 
 		</p>
