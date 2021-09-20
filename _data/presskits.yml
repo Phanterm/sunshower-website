@@ -19,10 +19,10 @@
   link3: https://www.youtube.com/channel/UC234FWrEan_qpsjAaOBVl0w
   link4: /blog.html
   link5:
-  image1: /assets/images/icon_twitter.png
-  image2: /assets/images/icon_discord.png
-  image3: /assets/images/icon_yt.png
-  image4: /assets/images/icon_blog.png
+  image1: icon_twitter.png
+  image2: icon_discord.png
+  image3: icon_yt.png
+  image4: icon_blog.png
   image5: 
 - type: project
   name: Coruncopia
@@ -46,11 +46,11 @@
                 <li>Immerse in a carefully handcrafted narrative full of memorable and interesting characters in a unique setting like no other.</li>
             </ul>
             "
-  link1: /assets/images/projects/coruncopia_screen.png
-  link2: /assets/images/projects/coruncopia_screen.png
-  link3: /assets/images/projects/coruncopia_screen.png
-  link4: /assets/images/projects/coruncopia_screen.png
-  image1: /assets/images/projects/coruncopia_screen.png
-  image2: /assets/images/projects/coruncopia_screen.png
-  image3: /assets/images/projects/coruncopia_screen.png
-  image4: /assets/images/projects/coruncopia_screen.png
+  link1: coruncopia_screen.png
+  link2: coruncopia_screen.png
+  link3: coruncopia_screen.png
+  link4: coruncopia_screen.png
+  image1: coruncopia_screen.png
+  image2: coruncopia_screen.png
+  image3: coruncopia_screen.png
+  image4: coruncopia_screen.png

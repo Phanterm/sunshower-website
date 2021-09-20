@@ -23,7 +23,7 @@ bg-image: parasol_background_green.png
 				<div class="flip-card-front hidden-mobile">
 					<div class="staff-icon-grid" style="background: {{ author.favorite_color }}">
 						<div class="staff-icon-image">
-							<img id="staffimage" src="/assets/images/bios/{{author.staff_icon}}">
+							<img id="staffimage" src="{{ site.baseurl }}/assets/images/bios/{{author.staff_icon}}">
 						</div>
 						<div class="staff-icon-name">
 							<h3 style="margin-bottom: 0px, font-family: 'Teko'">{{ author.name }}</h3>
@@ -36,7 +36,7 @@ bg-image: parasol_background_green.png
 		</div>
 			<div class="flip-card-back" style="background-color: {{ author.favorite_color }}">
 				<div class="staff-icon-image visible-mobile">
-					<img id="staffimage" src="/assets/images/bios/{{author.staff_icon}}">
+					<img id="staffimage" src="{{ site.baseurl }}/assets/images/bios/{{author.staff_icon}}">
 				</div>
 			  <h3>{{ author.name }}</h3>
 			  <h3><i>{{author.position}}</i></h3>
