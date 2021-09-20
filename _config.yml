@@ -30,3 +30,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
+  
+exclude:
+  - _layouts/default.html
+  - about.md
+  - staff.html
+  - presskit.html
+  - projects.html
+  - Gemfile
