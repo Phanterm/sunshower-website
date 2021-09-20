@@ -14,7 +14,7 @@ colorscheme: "#5FA5D3"
 			  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 			  </h3>
 			</li>
-			<li class="date">{{ post.date }}</li>
+			<li class="date">{{ post.date | date: '%B %d, %Y' }}</li>
 			<li class="description">
 			  <p>{{ post.excerpt }}</p>
 			</li>
