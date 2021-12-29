@@ -8,7 +8,7 @@ excerpt: So I made a game in a month. Also, spicy updates on Coruncopia!
 ---
 Hey hey! How’s it going?
 
-I’m back from completing NaNoWriMo (National Novel Writing Month) at the end of November, and am back to regularly scheduled development! First, let’s talk about the NaNoWriMo, because I did this for a good reason!
+I’m back from completing <a href="https://nanowrimo.org/">NaNoWriMo</a> (National Novel Writing Month) at the end of November, and am back to regularly scheduled development! First, let’s talk about the NaNoWriMo, because I did this for a good reason!
 
 I’m not a fan of crunch. At all. I don’t believe one should break their own body and mind just to release something at the same pace of an entire team. But I’d always refused to participate in it on principle, so what was it really like to push yourself that hard? 
 
