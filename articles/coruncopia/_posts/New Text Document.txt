@@ -1,0 +1,63 @@
+---
+layout: post
+author: grayson
+category: coruncopia
+tags: coruncopia
+title: "White Whales and Happy Trails"
+excerpt: So I made a game in a month. Also, spicy updates on Coruncopia!
+---
+Hey hey! How’s it going?
+
+I’m back from completing NaNoWriMo (National Novel Writing Month) at the end of November, and am back to regularly scheduled development! First, let’s talk about the NaNoWriMo, because I did this for a good reason!
+
+I’m not a fan of crunch. At all. I don’t believe one should break their own body and mind just to release something at the same pace of an entire team. But I’d always refused to participate in it on principle, so what was it really like to push yourself that hard? 
+
+<h2>Enter NaNoWriMo</h2>
+
+As much as I would have loved to have written an entire novel, instead I opted to create a small, demo-sized intro sequence in RPG Maker MZ. I did this because the framework is already set up for me to ostensibly scaffold an interactive novel, and being given only one month to bang out an entire experience is no small task. Time was of the essence.
+
+I started off by writing down my main story beats. There would be no combat, because even if I can kinda navigate pixel art, the extra assets needed for this would have severely cut into my time — battles were battle-axed. I had plenty of existing, unused music sitting around from almost 20 years of songwriting, and I bought a series of very useful asset packs in addition to drawing and animating the characters myself. Now all I had to do was make it come together and tell a story, which was the fun part.
+
+1.5 hours. One month later, that’s the time I had on my save file when I finished the game. I had pushed myself into sleepless nights; marathons of watching the same scene over and over just to get it right. I spent so much time researching things about the engine I didn’t know just to pull off some big effect here and there. I’m proud of the work I’ve done, but it also earned me the first migraine I’ve ever had in my life. Ooh, god. Not a fun experience, that.
+
+Now that I had been properly initiated into a brave new world of self-inflicted misery, I became shocked at the fact that my peers had often cited migraines of their own brought on due to their long hours on game development, usually paired with the sentiment of dread from having to work on their project at all. Up until about halfway through November, this was a feeling with which I could never empathize. I was actually somewhat heartbroken that this thing I started out loving now made me weary, as might an unfinished chore. It wasn’t just the time limit; my body simply needed rest it was not getting. 
+
+This project was hurting me. It was getting done, yes. But Coruncopia also got done without me hurting myself. I also love working on it, even when the code laughs at my futile efforts to do anything. I worry about the crunch in my game development because I don’t ever want to fall out of love with what I’m working on. And especially when you’re your own boss, it’s almost like having a relationship with your project. You need space, you need compromise, and you need patience. I forwent this ethos in the name of a kind of productivity — one defined by an industry carefully dressed in finery du jour and a strained expression of authenticity. 
+
+In forgetting myself, I abused the work. And indeed, in doing so I had for a brief moment lost sight of the important things. I was intentionally doing all of this just to create something. I wanted validation from my peers, something I was never afforded from my earliest days in game development (the fault of which was my own). Yes, I set out to delay the project I loved working on in order to humor and kill an old part of me. An old hunger stirred by insecurity; one that I knew could not be sated. But I had to confirm it: was I really ready to move on from my twisted facsimile of Captain Ahab, who was chasing a white whale simply to prove themself to others?
+
+To gently circle back to this analogy, a project, like a relationship, needs time for consideration and planning. And that is not a luxury afforded to those with a match lit under their heel (or bills to pay). This is not a statement about moral high ground; I am only able to explore this because of the privileged position I am in. Going forward with my own company, I have a lot to chew on when it comes to how it should function. 
+
+But that’s a blog post for another time. At the end of the day, I’m proud I got this thing done. More importantly, I now know that the crooked shoes of an auteur break my stride.
+
+Now, then, shall we talk about Coruncopia?
+
+<h2>Dust to Life Dust</h2>
+
+First off, the player health mock-up you saw in the previous post is now fully implemented just so. In addition, the player now has an energy meter for spells and actions, and a functional tracker for life dust that they collect. Oh? You don’t know what life dust is?
+
+In many action RPGs today, the typical approach to resource management is to create three pools: one for health, one for magic, and one for stamina. But Coruncopia is a game about efficient action. It isn’t that you have to play perfectly, but rather that you consider the cost of every move you make. Instead of separating physical actions such as jumping from special abilities like casting magic spells into their own pools, they share a single resource pool called energy.
+
+Physical actions are not horribly costly, but they do momentarily impair the rate at which energy regenerates. Spells, on the other hand, are extremely powerful and versatile, demanding a lot of energy. Dust is a system designed to solve the design tension between these two elements while rewarding methodical play, and enabling a game flow state where the player has reason to vary the types of actions they take without needing for them to share the same resource pool. 
+
+It goes a little something like this: every enemy drops a certain amount of dust. When you defeat an enemy using only physical attacks, all of the dust will give you a proportionate, sharp boost in your energy regeneration. Conversely, killing an enemy with magic will slowly fill any missing health diamonds (that’s the “life dust” part of it), restoring health after the player collects enough of it. As there are no health or magic drops in the game by default, savvy players will learn this system as early as possible in order to tip the odds in their favor.
+
+Right before November, I created a functioning UI skeleton for the menu system. That’s the inventory, map, spells, and configuration screen. It currently isn’t pretty to look at, but we’ve got bigger fish to fry. Namely, the feature I’m working on right now that necessitated first implementing the aforementioned UI and resource management: The Almanactor system.
+
+<h2>Spell Ya Later!</h2>
+
+I like to be open about my game design, but I can’t reveal too much about this just yet. I can tell you that it is one of two core systems upon which the entire game hinges itself. I’ve spent years in spreadsheets and design documents writing up and re-imagining how this thing is going to work. I can also tell you that this system will allow players to create thousands of spell combinations with which to customize their gameplay and express themselves in myriad ways.
+
+Anyway, I’m learning the joys of writing system requirements specification. As it turns out, keeping these massive systems in your head for years can easily rob you of the ability to see the forest for the trees. To put it another way, this thing is gonna take some time to complete. And boy, is it gonna be great. I can’t wait to share more with you as we continue development.
+
+That’s all for now. I want to express my deepest gratitude to everyone who is helping to make this project a reality, as well as to you, dear reader, for stopping in. May you celebrate the upcoming New Year with a fervor that would make the gods themselves envious.
+
+Ho, ho, ho…
+
+
+
+
+
+
+
+
