@@ -8,7 +8,7 @@ excerpt: So I made a game in a month. Also, spicy updates on Coruncopia!
 ---
 Hey hey! How’s it going?
 
-I’m back from completing NaNoWriMo (National Novel Writing Month) at the end of November, and am back to regularly scheduled development! First, let’s talk about the NaNoWriMo, because I did this for a good reason!
+I’m back from completing <a href="https://nanowrimo.org/">NaNoWriMo</a> (National Novel Writing Month) at the end of November, and am back to regularly scheduled development! First, let’s talk about the NaNoWriMo, because I did this for a good reason!
 
 I’m not a fan of crunch. At all. I don’t believe one should break their own body and mind just to release something at the same pace of an entire team. But I’d always refused to participate in it on principle, so what was it really like to push yourself that hard? 
 
@@ -18,7 +18,7 @@ As much as I would have loved to have written an entire novel, instead I opted t
 
 I started off by writing down my main story beats. There would be no combat, because even if I can kinda navigate pixel art, the extra assets needed for this would have severely cut into my time — battles were battle-axed. I had plenty of existing, unused music sitting around from almost 20 years of songwriting, and I bought a series of very useful asset packs in addition to drawing and animating the characters myself. Now all I had to do was make it come together and tell a story, which was the fun part.
 
-<img class = "article-image" src="article\sanguine.png">
+<p class="center"><img class="article-image" src="{{site.baseurl}}/assets/images/article/sanguine.png"></p>
 
 1.5 hours. One month later, that’s the time I had on my save file when I finished the game. I had pushed myself into sleepless nights; marathons of watching the same scene over and over just to get it right. I spent so much time researching things about the engine I didn’t know just to pull off some big effect here and there. I’m proud of the work I’ve done, but it also earned me the first migraine I’ve ever had in my life. Ooh, god. Not a fun experience, that.
 
