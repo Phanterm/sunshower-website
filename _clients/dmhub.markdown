@@ -1,7 +1,7 @@
 ---
 layout: default
 project-name: DMHub
-modal-id: 2
+modal-id: 1
 cover: dmhub.png
 img1: dmhub1.png
 img2: dmhub2.png

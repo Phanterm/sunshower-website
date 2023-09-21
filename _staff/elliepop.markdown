@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 img: ellie.png
-name: Elliepop
+name: Suzanne Dazo-Kennoy
 position: Producer
 likes: Strawberries, Dancing, VR
 skills: Kanban, Planning, Code Reviews

@@ -1,7 +1,7 @@
 ---
 layout: default
 project-name: Frogatto & Friends
-modal-id: 4
+modal-id: 3
 homepage: https://store.steampowered.com/app/865030/Frogatto__Friends/
 cover: frogatto.png
 img1: frogatto1.png

@@ -5,7 +5,7 @@ url: https://studiosunshower.com
 description: "A cooperative game development studio dedicated to the pursuit of new and interesting experiences!"
 keywords: "your keywords, separated by commas"
 skills: "Sunshower is a cooperative founded upon the idea of revolutionizing the way that games are made."
-meta_author: LastName FirstName
+meta_author: Dazo-Kennoy Grayson
 
 # Google webmaster tools
 google_verify: 
@@ -67,6 +67,9 @@ collections:
     output: true
   projects:
     output: true
+  clients:
+    output: true
+
 
 #for posts
 defaults:

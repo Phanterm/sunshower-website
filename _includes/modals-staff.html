@@ -20,6 +20,9 @@
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
+            {% if post.homepage %}
+            <a href="{{ post.homepage }}" target="_blank"><button type="button" class="btn btn-homepage">Link</button></a>
+            {% endif %}
             <ul class="list-inline item-details">
               {% if post.category %}
               <li>{{ post.category }}:

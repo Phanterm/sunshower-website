@@ -3,6 +3,7 @@ layout: default
 modal-id: 4
 img: anton.png
 name: Anton Corazza
+homepage: https://www.antoncorazza.com/
 position: Composer
 likes: Pizza, Webcomics, Kirby, Empathy
 skills: Composing, Producing, Rapping, Chillin Heavily

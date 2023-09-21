@@ -1,7 +1,7 @@
 ---
 layout: default
 project-name: Heart Forth, Alicia
-modal-id: 3
+modal-id: 2
 cover: hfa.png
 img1: hfa1.png
 img2: hfa2.png
