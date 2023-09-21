@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Sunshower</title>
+  <based-in>Seattle, Washington, USA</based-in>
+  <founding-date>2019</founding-date>
+  <website>www.studiosunshower.com</website>
+  <press-contact>
+  hunter@studiosunshower.com
+  </press-contact>
+
+  <!-- Google analytics ID: -->
+  <analytics></analytics>
+
+  <phone></phone>
+  <address>
+    <line>
+      300 Lenora Street PMB 6224
+    </line>
+    <line>
+      Seattle, WA 98121
+    </line>
+    <line>
+      United States
+    </line>
+  </address>
+
+  <socials>
+    <social>
+      <name>Discord</name>
+      <link>
+        https://discord.gg/4M3wsEBbRG
+      </link>
+    </social>
+      <social>
+        <name>Facebook</name>
+        <link>
+        https://www.facebook.com/gaming/studiosunshower
+        </link>
+     </social>
+      <social>
+        <name>Github</name>
+        <link>
+        http://github.com/phanterm
+        </link>
+     </social>
+  </socials>
+
+  <description>
+  Sunshower is a boutique cooperative game studio created to fulfill the need for high quality, lovingly hand-crafted experiences. We're made up of industry vets who know how to analyze and understand current and historical trends, and we pride ourselves on these abilities to chart our course.
+
+  Our mission is simple: deliver iconic games that will withstand the test of time.
+
+  Part of achieving and sustaining that mission statement is our philosophy -- to weather the storm in a demanding industry that changes every day.
+  </description>
+
+  <!-- Choose between a single block: -->
+  <history>Sunshower was founded in Seattle, Washington in 2019. Its founder, Grayson Dazo-Kennoy, is an industry veteran who has worked for large companies such as Wizards of the Coast and Microsoft Game Studios, and multiple, smaller independent teams on projects spanning several years. Having grown up being passionate about games, they became disillusioned and frustrated with the changing state of the industry and what it had become. For them, it felt increasingly more difficult to exist in a space that had become so caught up in the idea of fame or competition, rather than letting good work speak for itself. Longing for such a space but never finding it, they set out to make their own. </history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+
+  <trailers>
+   <trailer>
+      <name></name>
+
+      <youtube>
+         Video ID only, not the full URL
+      </youtube>
+    </trailer>
+  </trailers>
+
+  <awards>
+    <award>
+      <description></description>
+      <info></info>
+    </award>
+  </awards>
+
+  <quotes>
+    <quote>
+      <description></description>
+      <name></name>
+      <website></website>
+      <link></link>
+    </quote>
+  </quotes>
+
+  <additionals>
+    <additional>
+      <title></title>
+      <description></description>
+      <link></link>
+    </additional>
+  </additionals>-->
+
+  <credits>
+    <credit>
+      <person>Grayson Dazo-Kennoy</person>
+      <role>Director</role>
+
+      <!-- Optional: -->
+      <website></website>
+    </credit>
+    <credit>
+      <person>Suzanne Dazo-Kennoy</person>
+      <role>Producer</role>
+
+      <!-- Optional: -->
+      <website></website>
+    </credit>
+    <credit>
+      <person>Khuyen Lam</person>
+      <role>Artist</role>
+
+      <!-- Optional: -->
+      <website>https://junkyjunco.com/</website>
+    </credit>
+    <credit>
+      <person>Anton Corazza</person>
+      <role>Composer</role>
+
+      <!-- Optional: -->
+      <website>www.antoncorazza.com</website>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>Inquiries</name>
+
+      <!-- Pick one: -->
+      <mail>hunter@studiosunshower.com</mail>
+      <link></link>
+    </contact>
+  </contacts>
+</company>

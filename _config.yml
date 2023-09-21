@@ -1,14 +1,14 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Weather The Storm
+email: hunter@studiosunshower.com
+url: https://studiosunshower.com
+description: "A cooperative game development studio dedicated to the pursuit of new and interesting experiences!"
 keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
+skills: "Sunshower is a cooperative founded upon the idea of revolutionizing the way that games are made."
 meta_author: LastName FirstName
 
 # Google webmaster tools
-google_verify:
+google_verify: 
 
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
@@ -25,42 +25,48 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: FFFFFF #F95D62
+  primary-rgb: "249,93,98" #"128,179,255"
+  secondary: F95D62 #F95D62
+  secondary-dark: 0D2A38 #A2122F
+  tertiary: 63FFAC
+  tertiary-rgb: "98,255,172"
+  text-dark: 0D2A38 #Dark Navy
+  text-light: FFFFFF #White
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
+  copyright: Sunshower LLC
+  location: 
+  social: 
+  credits: 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+  - title: discord
+    url: https://discord.gg/4M3wsEBbRG
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/phanterm
+  - title: facebook
+    url: https://www.facebook.com/gaming/studiosunshower
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+#  - line: 
+#  - line: 
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  staff:
+    output: true
+  projects:
+    output: true
 
 #for posts
 defaults:
