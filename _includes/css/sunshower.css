@@ -1200,8 +1200,8 @@ img {
 
 .img-header {
     display: block;
-    width: 100% \9;
-    max-width: 100%;
+    width: 50% \9;
+    max-width: 25%;
     height: auto;
     margin-top: 4em;
 }
@@ -1209,15 +1209,17 @@ img {
 .img-project {
     display: block;
     position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
 }
 
 .img-staff {
     display: block;
     position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
     border-radius: 50%;
 }
 
