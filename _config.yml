@@ -3,8 +3,8 @@ title: Sunshower
 email: hunter@studiosunshower.com
 url: https://studiosunshower.com
 description: "A cooperative game development studio dedicated to the pursuit of new and interesting experiences!"
-keywords: "your keywords, separated by commas"
-skills: "Sunshower is a cooperative founded upon the idea of revolutionizing the way that games are made."
+keywords: "sunshower, studio sunshower, indie game studio, indie coop"
+skills: "Sunshower is a boutique cooperative founded upon the idea of celebrating the craft of game development, as well as those who practice this craft."
 meta_author: 
 
 # Google webmaster tools
@@ -47,8 +47,8 @@ social:
     url: https://discord.gg/4M3wsEBbRG
   - title: github
     url: http://github.com/phanterm
-  - title: facebook
-    url: https://www.facebook.com/gaming/studiosunshower
+  - title: bluesky
+    url: https://bsky.app/profile/studiosunshower.com
 
 # Postal address (add as many lines as necessary)
 address:
