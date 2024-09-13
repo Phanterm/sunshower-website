@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 1
-img: grayson.png
+img: phanterm.png
 name: Grayson Dazo-Kennoy
 position: Director
 likes: Baking, Cats, Petrichor (the smell of rain!)
