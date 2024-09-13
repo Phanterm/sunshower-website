@@ -54,7 +54,7 @@
   </description>
 
   <!-- Choose between a single block: -->
-  <history>Sunshower was founded in Seattle, Washington in 2019. Its founder, Grayson Dazo-Kennoy, is an industry veteran who has worked for large companies such as Wizards of the Coast and Microsoft Game Studios, and multiple, smaller independent teams on projects spanning several years. Grayson created Sunshower after becoming inspired to create the kind of boutique studio that was small and focused enough to not compromise on quality or the well-being of its workers.</history>
+  <history>Sunshower was founded in Seattle, Washington in 2019. Its founder, Hunter Dazo-Kennoy, is an industry veteran who has worked for large companies such as Wizards of the Coast and Microsoft Game Studios, and multiple, smaller independent teams on projects spanning several years. Hunter created Sunshower after becoming inspired to create the kind of boutique studio that was small and focused enough to not compromise on quality or the well-being of its workers.</history>
 
   <!-- Or multiple blocks: -->
   <!--
@@ -101,7 +101,7 @@
 
   <credits>
     <credit>
-      <person>Grayson Dazo-Kennoy</person>
+      <person>Hunter Dazo-Kennoy</person>
       <role>Director</role>
 
       <!-- Optional: -->
